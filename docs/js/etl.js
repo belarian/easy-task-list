@@ -768,9 +768,11 @@
 		// render projects with tasks when page load
 		Storage.select("0", function(data) {
 			makeSortable(getGroupElement("0"), "project");
-			data["dependent"].forEach(function(id) {
-				Storage.select(id, put);
-			});
+			if (data) {
+				data["dependent"].forEach(function(id) {
+					Storage.select(id, put);
+				});
+			}
 		});
 
 		return {
