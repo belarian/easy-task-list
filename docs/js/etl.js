@@ -718,8 +718,6 @@
 					/** @var String */
 					var oldDependence = e.from.getAttribute("data-group-id");
 					Storage.update(oldDependence, { dependent: this.toArray() });
-					//console.log('remove', e);
-					//console.log(this, this.toArray());
 				},
 				// Changed sorting within list
 				onUpdate: function(e) {
@@ -741,7 +739,7 @@
 							lastMoveOverElement.classList.remove("p-2");
 						lastMoveOverElement = sortableGroup;
 						sortableGroup.classList.add("p-2");
-					} else if (moveHelper.lastMoveOverElement) {
+					} else if (lastMoveOverElement) {
 						lastMoveOverElement.classList.remove("p-2");
 						lastMoveOverElement = null;
 					}
