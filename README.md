@@ -1,17 +1,17 @@
 # Easy Task List
 ​
-bg | en
+[bg](#Лесен-списък-със-задачи) | [en](#easy-task-list-1)
 ​​
 ## Лесен списък със задачи
 ​
 ### Описание
 
->
-​>:exclamation: :exclamation: :exclamation:
->
->**Цялата въведена информация се записва и пази в браузъра и никаква част от нея не се споделя или записва на отдалечен сървър. Затова тя не може да бъде достъпена от другаде и в същото време може лесно да бъде загубена при определени действия и/или настройки на браузъра.**
->
->:exclamation: :exclamation: :exclamation:
+
+​:exclamation: :exclamation: :exclamation:
+
+**Цялата въведена информация се записва и пази в браузъра и никаква част от нея не се споделя или записва на отдалечен сървър. Затова тя не може да бъде достъпена от другаде и в същото време може лесно да бъде загубена при определени действия и/или настройки на браузъра.**
+
+:exclamation: :exclamation: :exclamation:
 
 „Лесен списък със задачи“ е малка и изключително лесна за използване програмка за съставяне на списък със задачи и тяхното отмятане. Задачите първоначално се групират в проекти, но всяка задача може да има също подзадачи, и подзадачите могат да имат свои подзадачи и т.н., колкото са необходими. Задачите и подзадачите могат да бъдат пренареждани чрез хващане, влачене и пускане, като това е единственият и в същото време най-лесният начин за реорганизация на списъците със задачи.​
 
@@ -41,18 +41,17 @@ bg | en
 
 ---------------------------------------------------------------------
 
-bg | en
+[bg](#Лесен-списък-със-задачи) | [en](#easy-task-list-1)
 ​
 ## Easy task list
 
 ​### Description
 
->
-​>:exclamation: :exclamation: :exclamation:
->
->**All the information entered is saved and kept in the browser and no part of it is shared or saved on a remote server. Therefore, it can not be accessed elsewhere and at the same time can easily be lost in certain browser actions and/or settings.**
->
->:exclamation: :exclamation: :exclamation:
+:exclamation: :exclamation: :exclamation:
+
+**All the information entered is saved and kept in the browser and no part of it is shared or saved on a remote server. Therefore, it can not be accessed elsewhere and at the same time can easily be lost in certain browser actions and/or settings.**
+
+:exclamation: :exclamation: :exclamation:
 
 "Easy task list" is a small and extremely easy to use app for creating a to-do lists. Tasks are initially grouped into projects, but each task can also have subtasks, and subtasks can have their own subtask and so on, as needed. Tasks and subtasks can be rearranged by grabbing, dragging and dropping, making it the only and at the same time the easiest way to reorganize task lists.
 
