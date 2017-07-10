@@ -24,6 +24,8 @@
 
 [Font Comfortaa](https://fonts.google.com/specimen/Comfortaa) - шрифт със заоблен геометричен sans-serif тип дизайн.
 
+[Feather](https://feathericons.com/) - просто красиви икони с отворен код.
+
 [localForage](https://github.com/localForage/localForage) - подобрено съхранение извън мрежата. Обвива IndexedDB, WebSQL или localStorage, като използва просто, но мощно API.
 
 [Bootstrap v4](https://v4-alpha.getbootstrap.com) - най-популярният HTML, CSS, and JS работна рамка (framework) в света за изграждане на отзивчиви, първо мобилни проекти в мрежата.
@@ -61,6 +63,8 @@ However, you can still clone the repository or download the file archive, unzip 
 ### Acknowledgment
 ​
 [Font Comfortaa](https://fonts.google.com/specimen/Comfortaa) - font with rounded geometric sans-serif type design.
+
+[Feather](https://feathericons.com/) - simply beautiful open source icons.
 
 [localForage](https://github.com/localForage/localForage) - offline storage, improved. Wraps IndexedDB, WebSQL, or localStorage using a simple but powerful API.
 
