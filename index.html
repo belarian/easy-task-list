@@ -58,6 +58,10 @@
 			<line x1="2" y1="12" x2="22" y2="12"/>
 			<line x1="12" y1="2" x2="12" y2="22"/>
 		</symbol>
+		<symbol id="link">
+			<path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+			<path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71">
+		</symbol>
 	</svg>
 	<div id="noscript">
 		Your browser does not support JavaScript!
@@ -106,8 +110,8 @@
 			<div class="card-header project-header-shadow p-1">
 				<div class="d-flex justify-content-start">
 					<div class="mr-auto">
-						<button type="button" id="title-{{id}}" class="btn-link{{^status}} inactive{{/status}}" title="{{description}}" data-action="toggleStatus" data-item-id="{{id}}" data-toggle="collapse" data-target="#group-{{id}}" aria-expanded="false" aria-controls="collapseExample">
-							<h3 class="wba mb-0">{{title}}</h3>
+						<button type="button" id="title-{{id}}" class="btn-link{{^status}} inactive{{/status}}" data-action="toggleStatus" data-item-id="{{id}}" data-toggle="collapse" data-target="#group-{{id}}" aria-expanded="false" aria-controls="collapseExample">
+							<h3 class="wba mb-0" title="{{description}}">{{title}}</h3>
 						</button>
 					</div>
 					<div class="mr-0">
@@ -155,7 +159,7 @@
 					</button>
 				</div>
 				<div id="title-{{id}}" class="wba my-auto mr-auto pl-2" title="{{description}}">
-					{{#status}}{{title}}{{/status}}{{^status}}<del>{{title}}</del>{{/status}}
+	{{#status}}{{{title}}}{{/status}}{{^status}}<del>{{{title}}}</del>{{/status}}
 				</div>
 				<div class="mr-0">
 					<button class="btn btn-secondary btn-sm-task act-btns-toggler" type="button" data-action="toggleButtons" data-target="act-btns-{{id}}">
@@ -362,6 +366,7 @@
 	<!-- Mustache template engine -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
 	<script src="js/cookies.min.js"></script>
-	<script src="js/etl.min.js"></script>
+	<!--<script src="js/etl.min.js"></script>-->
+	<script src="js/etl.js"></script>
 </body>
 </html>

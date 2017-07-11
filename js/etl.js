@@ -174,10 +174,24 @@
 			return element.lastElementChild;
 		}
 
+		/**
+		 * @param String str
+		 * @return String
+		 */
+		function handleLinks(str) {
+			if (/https?:\/\//ig.test(str)) {
+				var re = /https?:\/\/[^\s]*/ig,
+					template = '$& <a href="$&" target="_blank"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="12" viewBox="0 0 24 24"><use class="svg svg-light-bg" xlink:href="#link" x="0" y="0"></use></svg></a>';
+				str = str.replace(re, template);
+			}
+			return str;
+		}
+
 		return {
 			setDocumentHeight: setDocumentHeight,
 			unsetDocumentHeight: unsetDocumentHeight,
-			appendHtml: appendHtml
+			appendHtml: appendHtml,
+			handleLinks: handleLinks
 		}
 	}();
 
@@ -490,9 +504,14 @@
 				/** @var Element */
 				var element = document.getElementById("title-" + data["id"]);
 
-				if (element.childElementCount)
-					element.firstElementChild.innerText = data["title"];
-				else element.innerText = data["title"];
+				if (getType(data["dependence"]) == "task") {
+					data["title"] = Helper.handleLinks(data["title"]);
+
+					if (data["status"] == "0")
+						data["title"] = "<del>" + data["title"] + "</del>";
+				} else element = element.firstElementChild;
+
+				element.innerHTML = data["title"];
 				element.title = data["description"];
 			});
 		}
@@ -544,18 +563,14 @@
 							btn.classList.remove("btn-secondary");
 							btn.classList.add('btn-success');
 							btn.firstElementChild.innerHTML = '<use class="svg" xlink:href="#check" x="0" y="0"></use>';
-							//btn.firstElementChild.classList.remove("glyphicon-eye-open");
-							//btn.firstElementChild.classList.add("glyphicon-ok");
 							text = document.getElementById("title-" + id);
-							text.innerHTML = "<del>" + text.innerText + "</del>";
+							text.innerHTML = "<del>" + text.innerHTML + "</del>";
 						} else {
 							btn.classList.remove('btn-success');
 							btn.classList.add("btn-secondary");
 							btn.firstElementChild.innerHTML = '<use class="svg svg-light-bg" xlink:href="#eye" x="0" y="0"></use>';
-							//btn.firstElementChild.classList.remove("glyphicon-ok");
-							//btn.firstElementChild.classList.add("glyphicon-eye-open");
 							text = document.getElementById("title-" + id);
-							text.innerHTML = text.innerText;
+							text.innerHTML = Helper.handleLinks(text.innerText);
 						}
 					}
 			});
@@ -644,6 +659,9 @@
 		 * @param Object data
 		 */
 		function put(data) {
+			if (getType(data["dependence"]) == "task")
+				data["title"] = Helper.handleLinks(data["title"]);
+
 			var type = getType(data["dependence"]),
 				html = Mustache.render(template[type], data),
 				element = Helper.appendHtml(getGroupElement(data["dependence"]), html);
@@ -673,6 +691,7 @@
 
 					// prevent double handling of one event in event chain sequence
 					if (e.type == listenEvent) {
+						//console.log(e);
 						// TODO make better fix of svg image inside button
 						switch (e.target.nodeName.toUpperCase()) {
 							case "BUTTON":
@@ -691,6 +710,9 @@
 						if (btn && btn.nodeName == "BUTTON") {
 							e.preventDefault();
 							buttonAction[btn.getAttribute("data-action")](btn);
+							return true;
+						} else if (btn && btn.nodeName == "A") {
+							e.preventDefault();
 							return true;
 						}
 					}

@@ -21,6 +21,19 @@ svg.svg-sm {
 	stroke: #333;
 }
 
+a > svg {
+	width: 1rem;
+	height: 1rem;
+}
+
+a .svg {
+	stroke: #0275d8;
+}
+
+a:focus .svg, a:hover .svg {
+	stroke: #014c8c;
+}
+
 /** Buttons */
 .btn {
 	line-height: 1;
@@ -29,6 +42,9 @@ svg.svg-sm {
 .btn-project {
 	padding: .25rem .5rem;
 	font-size: 0;
+}
+.btn-link {
+	cursor: pointer;
 }
 .btn-sm-task {
 	padding: .1rem .1rem;
