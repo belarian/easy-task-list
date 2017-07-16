@@ -1,16 +1,16 @@
 # Easy Task List
-​
+
 [bg](#Лесен-списък-със-задачи) | [en](#easy-task-list-1)
-​​
+
 ## Лесен списък със задачи
-​
-​:exclamation: :exclamation: :exclamation:
+
+:exclamation: :exclamation: :exclamation:
 
 **Цялата въведена информация се записва и пази в браузъра и никаква част от нея не се споделя или записва на отдалечен сървър. Затова тя не може да бъде достъпена от другаде и в същото време може лесно да бъде загубена при определени действия и/или настройки на браузъра.**
 
 :exclamation: :exclamation: :exclamation:
 
-„Лесен списък със задачи“ е малка и изключително лесна за използване програмка за съставяне на списък със задачи и тяхното отмятане. Задачите първоначално се групират в проекти, но всяка задача може да има също подзадачи, и подзадачите могат да имат свои подзадачи и т.н., колкото са необходими. Задачите и подзадачите могат да бъдат пренареждани чрез хващане, влачене и пускане, като това е единственият и в същото време най-лесният начин за реорганизация на списъците със задачи.​
+„Лесен списък със задачи“ е малка и изключително лесна за използване програмка за съставяне на списък със задачи и тяхното отмятане. Задачите първоначално се групират в проекти, но всяка задача може да има също подзадачи, и подзадачите могат да имат свои подзадачи и т.н., колкото са необходими. Задачите и подзадачите могат да бъдат пренареждани чрез хващане, влачене и пускане, като това е единственият и в същото време най-лесният начин за реорганизация на списъците със задачи.
 
 Главната идея зад тази програмка е, че тя трябва да отнема възможно най-малко от времето и вниманието на ползвателя, за да го остави да работи основно върху задачите си. Затова не очаквайте и не си губете времето да искате възможности, които ще усложнят и ще отдалечат програмката от първоначалната ѝ цел.
 
@@ -19,12 +19,15 @@
 Не е нужна инсталация. Може да я използвате направо от този адрес: [**ЛСЗ**](https://belarian.github.io/easy-task-list/)
 
 Но все пак може да клонирате хранилището или да свалите архива с файловете, да го разархивирате и да отворите `index.html` файла в браузъра.
-​
+
 ### Признателност
 
 [Font Comfortaa](https://fonts.google.com/specimen/Comfortaa) - шрифт със заоблен геометричен sans-serif тип дизайн.
 
 [Feather](https://feathericons.com/) - просто красиви икони с отворен код.
+
+
+[flag-icon-css](http://flag-icon-css.lip.is/) - солекция с всички флагове на страните в SVG заедно с CSS за по-лесна интеграция.
 
 [localForage](https://github.com/localForage/localForage) - подобрено съхранение извън мрежата. Обвива IndexedDB, WebSQL или localStorage, като използва просто, но мощно API.
 
@@ -34,14 +37,14 @@
 
 [mustache.js](https://github.com/janl/mustache.js) - малко логични {{mustache}} шаблони с JavaScript
 
-[cookies.js](https://github.com/madmurphy/cookies.js) - проста работна рамка (framework) за бисквитки с пълна поддръжка на Unicode. 
+[cookies.js](https://github.com/madmurphy/cookies.js) - проста работна рамка (framework) за бисквитки с пълна поддръжка на Unicode.
 
 ### Лиценз - [The Unlicense](./LICENSE)
 
 ---------------------------------------------------------------------
 
 [bg](#Лесен-списък-със-задачи) | [en](#easy-task-list-1)
-​
+
 ## Easy task list
 
 :exclamation: :exclamation: :exclamation:
@@ -59,12 +62,14 @@ The main idea behind this app is that it should take as little time as possible 
 There isn't need for installation. You can use it directly from this address: [**ETL**](https://belarian.github.io/easy-task-list/)
 
 However, you can still clone the repository or download the file archive, unzip it, and open the `index.html` file in the browser..
-​
+
 ### Acknowledgment
-​
+
 [Font Comfortaa](https://fonts.google.com/specimen/Comfortaa) - font with rounded geometric sans-serif type design.
 
 [Feather](https://feathericons.com/) - simply beautiful open source icons.
+
+[flag-icon-css](http://flag-icon-css.lip.is/) - a collection of all country flags in SVG — plus the CSS for easier integration.
 
 [localForage](https://github.com/localForage/localForage) - offline storage, improved. Wraps IndexedDB, WebSQL, or localStorage using a simple but powerful API.
 
