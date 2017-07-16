@@ -7,11 +7,24 @@
 	<link rel="icon" href="favicon.png" />
 	<title>Задачи</title>
 	<!-- Styles -->
-	<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
 	<link href="css/style.min.css" rel="stylesheet">
 </head>
 <body id="app-layout">
+	<div id="noscript">
+		Your browser does not support JavaScript!
+		<script>
+			var noscriptElement = document.getElementById("noscript");
+			noscriptElement.parentElement.removeChild(noscriptElement);
+		</script>
+	</div>
+	<div class="container-fluid">
+	<nav id="navbar" class="navbar sticky-top navbar-toggleable-md navbar-light bg-faded mb-2"></nav>
+	<section id="group-0" data-group-id="0"></section>
+	</div>
+	<section id="modal-container" class="modal fade" tabindex="-1" role="dialog"></section>
+
 	<svg style="display:none;">
 		<symbol id="plus-circle">
 			<circle cx="12" cy="12" r="10"/>
@@ -63,19 +76,6 @@
 			<path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71">
 		</symbol>
 	</svg>
-	<div id="noscript">
-		Your browser does not support JavaScript!
-		<script>
-			var noscriptElement = document.getElementById("noscript");
-			noscriptElement.parentElement.removeChild(noscriptElement);
-		</script>
-	</div>
-	<div class="container-fluid">
-	<nav id="navbar" class="navbar sticky-top navbar-toggleable-md navbar-light bg-faded mb-2"></nav>
-	<section id="group-0" data-group-id="0"></section>
-	</div>
-	<section id="modal-container" class="modal fade" tabindex="-1" role="dialog"></section>
-
 	<script id="navbar-template" type="x-tmpl-mustache">
 		<button class="navbar-toggler btn-sm-task navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
 			<svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24">

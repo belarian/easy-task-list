@@ -474,9 +474,12 @@
 
 		// choose proper event handling
 		// (not best solution but is workoround until find better)
-		if ("ontouchstart" in window) {
+		if ("ontouchstart" in window && "onpointerdown" in window) {
+			listenEvent = "pointerdown";
+			delay = 150;
+		} else if ("ontouchstart" in window) {
 			listenEvent = "touchstart";
-			delay = 300;
+			delay = 150;
 		} else if ("onpointerdown" in window) {
 			listenEvent = "pointerdown";
 		} else if ("onmousedown" in window) {
